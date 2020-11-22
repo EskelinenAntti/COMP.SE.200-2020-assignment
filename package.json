@@ -20,7 +20,8 @@
     "collectCoverageFrom": [
       "**/*.js",
       "!**/node_modules/**",
-      "!**/.internal/**"
+      "!**/.internal/**",
+      "!**/coverage/**"
     ],
     "transform": {}
   }
