@@ -2,8 +2,12 @@ import toString from "../src/toString";
 
 describe("Test toString", () => {
 
-  test("without value", () => {
+  test("with value null", () => {
     expect(toString(null)).toBe("");
+  });
+
+  test("without value", () => {
+    expect(toString()).toBe("");
   });
 
   test("with negative number", () => {

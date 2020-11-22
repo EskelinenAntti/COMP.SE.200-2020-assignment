@@ -3,8 +3,7 @@ import isBuffer from "../src/isBuffer"
 describe("Test isBuffer", () => {
 
   test("with buffer", () => {
-    //expect(isBuffer(new Buffer(2))).toBe(true);
-    expect(isBuffer(Buffer.from("2"))).toBe(true);
+    expect(isBuffer(new Buffer(2))).toBe(true);
   });
 
   test("incorrect value", () => {
