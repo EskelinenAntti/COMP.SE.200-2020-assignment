@@ -1,4 +1,4 @@
-import add from "../source/src/add";
+import add from "../src/add";
 
 describe("Test add", () => {
 
