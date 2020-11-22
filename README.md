@@ -1,13 +1,26 @@
-# Student template
+[![Build Status](https://travis-ci.com/EskelinenAntti/COMP.SE.200-2020-assignment.svg?branch=master)](https://travis-ci.com/EskelinenAntti/COMP.SE.200-2020-assignment)
+[![Coverage Status](https://coveralls.io/repos/github/EskelinenAntti/COMP.SE.200-2020-assignment/badge.svg?branch=master)](https://coveralls.io/github/EskelinenAntti/COMP.SE.200-2020-assignment?branch=master)
 
-## Purpose of this repository
+## COMP.SE.200-2020-2021-1 Software Testing
+#### Assignment - Part 2 - Executing the tests
 
-This is a project template for students participating in Software Testing course
-at Tampere University.
+###### Members
+* Antti Eskelinen
+* Markus Palomäki
 
-The repository only contains the source code that is under testing, `package.json` skeleton
-and LICENSE file.
+###### Initializing
 
-Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
-Removing this license file directly violates terms and conditions of the software under testing.
-Individuals who remove or modify the license file will also carry the consequences.
+Run following command in the cloned repository to fetch course code as git
+submodule:
+
+`git submodule update --init`
+
+Install dependencies by running following in the root directory:
+
+`npm i`
+
+###### Running tests
+
+Run following command to run the tests
+
+`npm test`
