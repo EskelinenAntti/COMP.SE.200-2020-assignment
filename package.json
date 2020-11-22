@@ -5,10 +5,23 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage"
   },
-  "author": "",
+  "author": "Markus Palomaki and Antti Eskelinen",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.6.3",
+    "coveralls": "^3.1.0"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/.internal/**"
+    ],
+    "transform": {}
+  }
 }
